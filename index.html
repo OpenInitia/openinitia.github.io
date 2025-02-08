@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KnowEmail - Free Bulk Email Verifier &amp; Validator</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="KnowEmail is a free, open-source bulk email verifier &amp; validator that ensures your email lists are clean and effective. Verify email syntax, check domains, and boost deliverability with our accurate email validation tool.">
+    <meta name="keywords" content="KnowEmail, Email Verifier, Email Validator, Bulk Email Verification, Free Email Validation, Email List Cleaner, Open Source Email Tool, Email Syntax Checker, Domain Verification, ad free email validator, windows tool, linux tool, github tool">
+    <meta name="robots" content="index, follow">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light px-0 py-3">
+        <div class="container-xl">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="h-8" alt="...">
+                 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- <div class="navbar-nav mx-lg-auto">
+                    <a class="nav-item nav-link active" href="#" aria-current="page">nav1</a>
+                    <a class="nav-item nav-link" href="#">nav2</a>
+                   
+                </div> -->
+                <!-- Right navigation -->
+                
+                
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="p-10">
+                        <div class="mb-8 text-center">
+                            <h1 class="mb-2">Free Bulk Email Verifier<br>Ad-Free & Open Source</h1>
+                            <p>Tired of dealing with invalid email addresses? KnowEmail helps you clean
+                                your email lists by ensuring every address is valid before you send that important
+                                campaign.</p>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://github.com/OpenInitia/KnowEmail/releases" class="btn btn-dark btn-lg m-2"> <i
+                                    class="fas fa-download"></i> Download Latest Version
+                            </a>
+                            <a href="https://github.com/OpenInitia/KnowEmail/" class="btn btn-dark btn-lg m-2"> <i class="fab fa-github"></i>
+                                View on GitHub </a>
+                            <!-- <a href="your-version-history-link" class="btn btn-info btn-lg mx-2"> <i
+                                    class="fas fa-history"></i> Version History </a> -->
+                        </div>
+                        <div class="main text-center mt-5">
+                            <img src="knowemail.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Support Us</h2>
+                    <p class="mt-5">We’ve made this tool free and open-source for everyone. If you’d like to support our
+                        development
+                        efforts, consider donating.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=salilmhatre88@gmail.com&item_name=Support%20Our%20Tool&amount=5&currency_code=USD"
+                            class="btn btn-secondary mx-2">
+                            <i class="fas fa-coffee"></i> $5
+                        </a>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=salilmhatre88@gmail.com&item_name=Support%20Our%20Tool&amount=10&currency_code=USD"
+                            class="btn btn-secondary mx-2">
+                            <i class="fas fa-coffee"></i> $10
+                        </a>
+                        <div class="input-group mx-2" style="max-width: 150px;">
+                            <input type="number" id="customAmount" class="form-control" placeholder="Custom" min="1">
+                        </div>
+                        <a id="payNow" href="#" class="btn btn-dark">
+                            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal"
+                                style="height: 20px; margin-right: 8px;"> Donate
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="mb-5">OR</h3>
+                        <a href="https://buymeacoffee.com/deadpool2k" target="_blank">
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee"
+                                style="height: 50px;">
+                        </a>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById('payNow').addEventListener('click', function () {
+                        var customAmount = document.getElementById('customAmount').value;
+                        if (customAmount && customAmount > 0) {
+                            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=salilmhatre88@gmail.com&item_name=Support%20Our%20Tool&amount=${customAmount}&currency_code=USD`;
+                        } else {
+                            alert('Please enter a valid custom amount.');
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <section class="footer bg-dark mt-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-2">
+                    <span class="text-white">Copyright &copy;OpenInitia 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
