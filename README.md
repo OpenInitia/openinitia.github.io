@@ -1,2 +1,2 @@
-# knowemail.github.io
-KnowEmail Page
+# openinitia.github.io
+OpenInitia Page
