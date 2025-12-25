@@ -400,7 +400,33 @@ footer {
     color: #666;
 }
 
-/* Tenor GIF spacing */
-.tenor-gif-embed {
-    width: 100% !important;
+/* FAQ Accordion */
+.accordion-button {
+    background-color: var(--card-bg) !important;
+    color: var(--terminal-green) !important;
+    border: 1px solid rgba(0, 255, 65, 0.1) !important;
+    box-shadow: none !important;
+    font-weight: 700;
+}
+
+.accordion-button::after {
+    filter: invert(1) hue-rotate(90deg);
+}
+
+.accordion-button:not(.collapsed) {
+    border-bottom: 2px solid var(--terminal-green) !important;
+    background-color: #000 !important;
+}
+
+.accordion-body {
+    background-color: #000;
+    color: var(--text-muted);
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    border-top: none;
+}
+
+.accordion-item {
+    border: none !important;
+    margin-bottom: 1rem;
+    background: transparent !important;
 }
