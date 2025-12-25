@@ -400,33 +400,97 @@ footer {
     color: #666;
 }
 
-/* FAQ Accordion */
+/* FAQ Accordion - Premium Terminal Design */
+.accordion-item {
+    background: transparent !important;
+    border: 1px solid rgba(0, 255, 65, 0.1) !important;
+    border-left: 4px solid rgba(0, 255, 65, 0.2) !important;
+    margin-bottom: 20px !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item:hover {
+    border-color: rgba(0, 255, 65, 0.4) !important;
+    border-left-color: var(--terminal-green) !important;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.05);
+}
+
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+    border-color: rgba(0, 255, 65, 0.5) !important;
+    border-left-color: var(--terminal-green) !important;
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
+}
+
+
 .accordion-button {
     background-color: var(--card-bg) !important;
     color: var(--terminal-green) !important;
-    border: 1px solid rgba(0, 255, 65, 0.1) !important;
+    padding: 1.5rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    border: none !important;
     box-shadow: none !important;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 .accordion-button::after {
-    filter: invert(1) hue-rotate(90deg);
+    background-image: none !important;
+    content: '[+]';
+    font-family: 'JetBrains Mono', monospace;
+    width: auto;
+    height: auto;
+    color: var(--terminal-green);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-left: auto;
 }
 
 .accordion-button:not(.collapsed) {
-    border-bottom: 2px solid var(--terminal-green) !important;
-    background-color: #000 !important;
+    background-color: rgba(0, 255, 65, 0.05) !important;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '[-]';
+    transform: none !important;
+    color: var(--terminal-green);
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: rgba(0, 255, 65, 0.3) !important;
 }
 
 .accordion-body {
-    background-color: #000;
-    color: var(--text-muted);
-    border: 1px solid rgba(0, 255, 65, 0.1);
-    border-top: none;
+    background-color: #000 !important;
+    color: var(--text-muted) !important;
+    padding: 1.5rem 2rem !important;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(0, 255, 65, 0.05);
 }
 
-.accordion-item {
-    border: none !important;
-    margin-bottom: 1rem;
-    background: transparent !important;
+/* Mobile Friendly Adjustments */
+@media (max-width: 768px) {
+    .accordion-button {
+        padding: 1.25rem 1rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    .accordion-body {
+        padding: 1.25rem 1rem !important;
+        font-size: 0.9rem;
+    }
+
+    .accordion-item {
+        margin-bottom: 12px !important;
+    }
+
+    .accordion-button::after {
+        font-size: 0.8rem;
+    }
 }
