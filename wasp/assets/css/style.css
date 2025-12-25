@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #0c0c0c;
+    --card-bg: #181818;
+    --terminal-green: #00ff41;
+    --terminal-dim: #00cc33;
+    --text-color: #ffffff;
+    /* pure white for primary */
+    --text-muted: #b0b0b0;
+    /* brighter secondary */
+    --accent-blue: #00d2ff;
+    --danger-red: #ff3e3e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.05rem;
+    /* slightly larger base font */
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--card-bg);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--terminal-dim);
+}
+
+.terminal-text {
+    color: var(--terminal-green);
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.navbar {
+    background: rgba(12, 12, 12, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, rgba(0, 255, 65, 0.05) 0%, rgba(12, 12, 12, 1) 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.glitch {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--terminal-green);
+    letter-spacing: 5px;
+    animation: glitch 1s linear infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+        transform: skew(0.85deg);
+    }
+
+    5% {
+        clip: rect(70px, 9999px, 71px, 0);
+        transform: skew(0.58deg);
+    }
+
+    10% {
+        clip: rect(37px, 9999px, 84px, 0);
+        transform: skew(0.79deg);
+    }
+
+    /* ... more frames if needed, but let's keep it concise or use a simpler glitch ... */
+    100% {
+        clip: rect(67px, 9999px, 62px, 0);
+        transform: skew(0.1deg);
+    }
+}
+
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(65px, 9999px, 100px, 0);
+        transform: skew(0.15deg);
+    }
+
+    /* ... */
+}
+
+/* Let's use a simpler but effective glitch for the title */
+.glitch {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-skew {
+    0% {
+        transform: skew(1deg);
+    }
+
+    10% {
+        transform: skew(-1deg);
+    }
+
+    20% {
+        transform: skew(2deg);
+    }
+
+    30% {
+        transform: skew(0deg);
+    }
+
+    40% {
+        transform: skew(1deg);
+    }
+
+    50% {
+        transform: skew(-1deg);
+    }
+
+    60% {
+        transform: skew(0deg);
+    }
+
+    70% {
+        transform: skew(2deg);
+    }
+
+    80% {
+        transform: skew(-1deg);
+    }
+
+    90% {
+        transform: skew(1deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    border-bottom: 2px solid var(--terminal-dim);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 65, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--terminal-green);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--terminal-green);
+    margin-bottom: 1.5rem;
+}
+
+.gif-container {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+.gif-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    font-style: italic;
+}
+
+.btn-terminal {
+    background: transparent;
+    border: 2px solid var(--terminal-green);
+    color: var(--terminal-green);
+    padding: 12px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn-terminal:hover {
+    background: var(--terminal-green);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--terminal-green);
+}
+
+.btn-download {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.btn-download:hover {
+    background: var(--accent-blue);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--accent-blue);
+}
+
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+.opacity-75 {
+    opacity: 0.9 !important;
+    /* Boosted from 0.75 */
+}
+
+h3.terminal-text {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.lead {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.console-output {
+    background: #000;
+    border-left: 5px solid var(--terminal-green);
+    /* brighter border */
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.status-pip {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--terminal-green);
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sarcasm-badge {
+    background: var(--danger-red);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Download Icons */
+.platform-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--terminal-green);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .platform-icon,
+.p-4:hover .platform-icon {
+    transform: scale(1.1);
+}
+
+.opacity-50 .platform-icon {
+    color: #666;
+}
+
+/* Responsiveness */
+@media (max-width: 991.98px) {
+    .glitch {
+        font-size: 3.5rem;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .status-container {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .d-flex.gap-3 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .glitch {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .glitch {
+        font-size: 2rem;
+    }
+
+    .btn-terminal {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Tenor GIF spacing */
+.tenor-gif-embed {
+    width: 100% !important;
+}
