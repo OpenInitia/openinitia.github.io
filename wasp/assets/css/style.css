@@ -11,6 +11,7 @@
     /* brighter secondary */
     --accent-blue: #00d2ff;
     --danger-red: #ff3e3e;
+    color-scheme: dark;
 }
 
 body {
@@ -400,6 +401,10 @@ footer {
     color: #666;
 }
 
+#faq {
+    background-color: var(--bg-color);
+}
+
 /* FAQ Accordion - Premium Terminal Design */
 .accordion-item {
     background: transparent !important;
@@ -437,6 +442,11 @@ footer {
     transition: all 0.3s ease;
 }
 
+.accordion-button:hover {
+    color: var(--terminal-green) !important;
+    background-color: rgba(0, 255, 65, 0.05) !important;
+}
+
 .accordion-button::after {
     background-image: none !important;
     content: '[+]';
@@ -450,7 +460,9 @@ footer {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: rgba(0, 255, 65, 0.05) !important;
+    background-color: var(--card-bg) !important;
+    /* Force same as desktop */
+    color: var(--terminal-green) !important;
     border-bottom: 1px solid rgba(0, 255, 65, 0.1) !important;
 }
 
@@ -463,6 +475,12 @@ footer {
 .accordion-button:focus {
     box-shadow: none !important;
     border-color: rgba(0, 255, 65, 0.3) !important;
+    background-color: var(--card-bg) !important;
+    color: var(--terminal-green) !important;
+}
+
+.accordion-button:active {
+    background-color: var(--card-bg) !important;
 }
 
 .accordion-body {
