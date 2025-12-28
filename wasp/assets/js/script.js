@@ -113,11 +113,11 @@ $(document).ready(function () {
     setInterval(() => {
         const randomMsg = messages[Math.floor(Math.random() * messages.length)];
         const newLine = $('<div class="text-secondary mb-2">> ' + randomMsg + '</div>');
-        $('.console-output').append(newLine);
+        $('#hero-console').append(newLine);
 
         // Keep only last 6 lines
-        if ($('.console-output div').length > 6) {
-            $('.console-output div').first().remove();
+        if ($('#hero-console div').length > 6) {
+            $('#hero-console div').first().remove();
         }
     }, 5000);
 
