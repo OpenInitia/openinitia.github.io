@@ -512,3 +512,111 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* Translation Widget */
+.translate-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.translate-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(12, 12, 12, 0.9);
+    border: 2px solid var(--terminal-green);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.translate-btn:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 65, 0.6);
+    transform: scale(1.1);
+    background: var(--terminal-green);
+}
+
+.translate-widget.active .translate-btn {
+    background: var(--terminal-green);
+    box-shadow: 0 0 25px rgba(0, 255, 65, 0.4);
+}
+
+.lang-options {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: rgba(12, 12, 12, 0.95);
+    border: 1px solid var(--terminal-green);
+    border-radius: 12px;
+    padding: 10px 0;
+    width: 180px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transform-origin: bottom right;
+    animation: slideUp 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.translate-widget.active .lang-options {
+    display: flex;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.lang-option {
+    padding: 10px 20px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-option:hover {
+    background: rgba(0, 255, 65, 0.1);
+    color: var(--terminal-green);
+    padding-left: 25px;
+}
+
+.lang-flag {
+    font-size: 1.2rem;
+}
+
+/* RTL Support */
+body.rtl-mode {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl-mode .ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+body.rtl-mode .me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}

@@ -55,11 +55,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#problem">The Problem</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Solution</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sarcasm">Sarcasm.exe</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-terminal ms-lg-3 mt-2 mt-lg-0" href="#download">Get
+                    <li class="nav-item"><a class="nav-link" href="#problem" data-i18n="nav_problem">The Problem</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#features" data-i18n="nav_solution">Solution</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sarcasm" data-i18n="nav_sarcasm">Sarcasm.exe</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-terminal ms-lg-3 mt-2 mt-lg-0" href="#download"
+                            data-i18n="nav_get_wasp">Get
                             WASP</a></li>
                 </ul>
             </div>
@@ -73,33 +76,40 @@
                 <div class="col-lg-7">
                     <div class="status-container mb-3">
                         <span class="status-pip"></span>
-                        <span class="terminal-text small">SYSTEM STATUS: ALWAYS PRODUCTIVE</span>
+                        <span class="terminal-text small" data-i18n="hero_status">SYSTEM STATUS: ALWAYS
+                            PRODUCTIVE</span>
                     </div>
                     <h1 class="glitch terminal-text mb-4" data-text="W.A.S.P.">W.A.S.P.</h1>
-                    <h2 class="h3 mb-4">Undetectable Mouse Jiggler & Activity Simulator</h2>
-                    <p class="lead mb-5 text-secondary">
+                    <h2 class="h3 mb-4" data-i18n="hero_subtitle">Undetectable Mouse Jiggler & Activity Simulator</h2>
+                    <p class="lead mb-5 text-secondary" data-i18n="hero_desc">
                         The ultimate <strong>work activity simulator</strong> designed to <strong>bypass employee
                             monitoring software</strong>. Appear active on Microsoft Teams, Slack, and Zoom while you
                         take your well-deserved break.
                         Outsmarting corporate surveillance with natural curves and human-like laziness.
                     </p>
                     <div class="d-flex gap-3">
-                        <a href="#download" class="btn btn-terminal">Deploy Now</a>
+                        <a href="#download" class="btn btn-terminal" data-i18n="btn_deploy">Deploy Now</a>
                         <a href="https://github.com/Deadpool2000/WASP" target="_blank"
-                            class="btn btn-outline-secondary btn-terminal">View Source</a>
+                            class="btn btn-outline-secondary btn-terminal" data-i18n="btn_source">View Source</a>
                     </div>
                 </div>
                 <div class="col-lg-5 d-none d-lg-block">
                     <div class="console-output" id="hero-console">
-                        <div class="terminal-text mb-2">> initializing_human_behavior... [OK]</div>
-                        <div class="text-secondary mb-1">> simulating_natural_mouse_movement...</div>
-                        <div class="text-secondary mb-1">> bypassing_idle_timer... IN_PROGRESS</div>
-                        <div class="text-secondary mb-1">> applying_entropy_filters(level="extreme")...</div>
-                        <div class="text-secondary mb-1">> clicking_random_intervals(3000, 7000)...</div>
-                        <div class="text-secondary mb-1">> window_switching_mode: ACTIVE</div>
-                        <div class="text-secondary mb-1">> keyboard_simulation: ENABLED</div>
-                        <div class="text-secondary mb-1">> stealth_level: UNDETECTABLE</div>
-                        <div class="terminal-text mt-2">> STATUS: HR IS CONFUSED</div>
+                        <div class="terminal-text mb-2" data-i18n="console_init">> initializing_human_behavior... [OK]
+                        </div>
+                        <div class="text-secondary mb-1" data-i18n="console_mouse">>
+                            simulating_natural_mouse_movement...</div>
+                        <div class="text-secondary mb-1" data-i18n="console_idle">> bypassing_idle_timer... IN_PROGRESS
+                        </div>
+                        <div class="text-secondary mb-1" data-i18n="console_entropy">>
+                            applying_entropy_filters(level="extreme")...</div>
+                        <div class="text-secondary mb-1" data-i18n="console_click">> clicking_random_intervals(3000,
+                            7000)...</div>
+                        <div class="text-secondary mb-1" data-i18n="console_window">> window_switching_mode: ACTIVE
+                        </div>
+                        <div class="text-secondary mb-1" data-i18n="console_key">> keyboard_simulation: ENABLED</div>
+                        <div class="text-secondary mb-1" data-i18n="console_stealth">> stealth_level: UNDETECTABLE</div>
+                        <div class="terminal-text mt-2" data-i18n="console_status">> STATUS: HR IS CONFUSED</div>
                     </div>
                 </div>
             </div>
@@ -110,20 +120,22 @@
     <section id="problem" class="py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="section-title">Why You Need a <strong>W.A.S.P</strong> <span class="sarcasm-badge">Invasive
-                        Much?</span></h2>
+                <h2 class="section-title"><span data-i18n="problem_title">Why You Need a <strong>W.A.S.P</strong></span>
+                    <span class="sarcasm-badge" data-i18n="problem_badge">Invasive
+                        Much?</span>
+                </h2>
             </div>
 
             <!-- Point 1: The Status War -->
             <div class="row align-items-center mb-5 pb-lg-5">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="pe-lg-5">
-                        <h3 class="terminal-text mb-3">01. The "Active Status" Paranoia</h3>
-                        <p class="lead text-secondary">
+                        <h3 class="terminal-text mb-3" data-i18n="prob_1_title">01. The "Active Status" Paranoia</h3>
+                        <p class="lead text-secondary" data-i18n="prob_1_desc">
                             Is it really work if your Slack dot isn't glowing green? Modern <strong>activity tracking
                                 software</strong> flags you the moment you step away to, you know, live your life.
                         </p>
-                        <p class="text-secondary opacity-75">
+                        <p class="text-secondary opacity-75" data-i18n="prob_1_extra">
                             WASP ensures your digital presence is always "Active" even when your physical presence is
                             "At the Fridge." No more yellow dots. No more "You there?" pings from managers who have too
                             much free time.
@@ -143,12 +155,12 @@
             <div class="row align-items-center mb-5 pb-lg-5 flex-lg-row-reverse">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="ps-lg-5">
-                        <h3 class="terminal-text mb-3">02. HR's Digital Panopticon</h3>
-                        <p class="lead text-secondary">
+                        <h3 class="terminal-text mb-3" data-i18n="prob_2_title">02. HR's Digital Panopticon</h3>
+                        <p class="lead text-secondary" data-i18n="prob_2_desc">
                             Companies are now tracking "engagement" based on mouse clicks and keystrokes. It's not about
                             what you finish—it's about how much you <em>wiggle</em>.
                         </p>
-                        <p class="text-secondary opacity-75">
+                        <p class="text-secondary opacity-75" data-i18n="prob_2_extra">
                             We use physics-based algorithms to simulate <strong>natural mouse movement</strong>. To
                             their tracking bots, you're a god-tier multitasker. To us, you're just someone who values
                             their sanity.
@@ -168,12 +180,12 @@
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="pe-lg-5">
-                        <h3 class="terminal-text mb-3">03. The Remote Work "Tax"</h3>
-                        <p class="lead text-secondary">
+                        <h3 class="terminal-text mb-3" data-i18n="prob_3_title">03. The Remote Work "Tax"</h3>
+                        <p class="lead text-secondary" data-i18n="prob_3_desc">
                             The price of working from home shouldn't be constant surveillance. You delivered the
                             project, now you deserve the 2 PM coffee break without a trial.
                         </p>
-                        <p class="text-secondary opacity-75">
+                        <p class="text-secondary opacity-75" data-i18n="prob_3_extra">
                             WASP is your <strong>stealth anti-sleep</strong> companion. It runs quietly in the
                             background, keeping your PC awake and your <strong>Teams status active</strong> while you
                             reclaim your time.
@@ -190,7 +202,7 @@
             </div>
 
             <div class="text-center mt-5">
-                <h3 class="text-secondary mx-auto">
+                <h3 class="text-secondary mx-auto" data-i18n="prob_footer">
                     Modern companies track your mouse, keyboard, and soul. WASP is your <strong>undetectable activity
                         simulator</strong> to reclaim your privacy. <strong>Enough is enough.</strong>
                 </h3>
@@ -202,14 +214,15 @@
     <section id="features" class="py-5 bg-dark">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="section-title">Bypass Inactivity Tracking Features</h2>
+                <h2 class="section-title" data-i18n="features_title">Bypass Inactivity Tracking Features</h2>
             </div>
             <div class="row g-4 mt-4">
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-mouse feature-icon"></i>
-                        <h4>Natural Mouse Mover</h4>
-                        <p class="text-secondary">Physics-based mouse paths ensure your activity is
+                        <h4 data-i18n="feat_1_title">Natural Mouse Mover</h4>
+                        <p class="text-secondary" data-i18n="feat_1_desc">Physics-based mouse paths ensure your activity
+                            is
                             <strong>undetectable</strong>. No linear bot patterns—we travel in natural curves to
                             <strong>keep status green on Teams</strong>.
                         </p>
@@ -218,16 +231,18 @@
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-keyboard feature-icon"></i>
-                        <h4>Active Keyboard Simulation</h4>
-                        <p class="text-secondary">Simulates keystrokes at random intervals. To the <strong>activity
+                        <h4 data-i18n="feat_2_title">Active Keyboard Simulation</h4>
+                        <p class="text-secondary" data-i18n="feat_2_desc">Simulates keystrokes at random intervals. To
+                            the <strong>activity
                                 tracking software</strong>, you're hard at work. To you, it's peaceful coffee time.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-window-restore feature-icon"></i>
-                        <h4>Smart App Switcher</h4>
-                        <p class="text-secondary">Randomly switches between windows to simulate multitasking. Keep your
+                        <h4 data-i18n="feat_3_title">Smart App Switcher</h4>
+                        <p class="text-secondary" data-i18n="feat_3_desc">Randomly switches between windows to simulate
+                            multitasking. Keep your
                             <strong>Slack and Zoom status active</strong> without lifting a finger.
                         </p>
                     </div>
@@ -235,16 +250,18 @@
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-shield-alt feature-icon"></i>
-                        <h4>Stealth Anti-Sleep</h4>
-                        <p class="text-secondary">A <strong>software mouse jiggler</strong> that blends into your
+                        <h4 data-i18n="feat_4_title">Stealth Anti-Sleep</h4>
+                        <p class="text-secondary" data-i18n="feat_4_desc">A <strong>software mouse jiggler</strong> that
+                            blends into your
                             background. <strong>Prevent screen lock</strong> and sleep mode without bulky hardware.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-skull-crossbones feature-icon"></i>
-                        <h4>Panic Button (F9)</h4>
-                        <p class="text-secondary">Emergency <strong>anti-surveillance</strong> stop. Press F9 and all
+                        <h4 data-i18n="feat_5_title">Panic Button (F9)</h4>
+                        <p class="text-secondary" data-i18n="feat_5_desc">Emergency <strong>anti-surveillance</strong>
+                            stop. Press F9 and all
                             <strong>simulated activity</strong> stops instantly. Like you were never there. Spooky.
                         </p>
                     </div>
@@ -252,8 +269,9 @@
                 <div class="col-md-4">
                     <div class="feature-card">
                         <i class="fas fa-calendar-alt feature-icon"></i>
-                        <h4>Smart Work Scheduler</h4>
-                        <p class="text-secondary">Automate your <strong>remote work hours</strong>. Set WASP to match
+                        <h4 data-i18n="feat_6_title">Smart Work Scheduler</h4>
+                        <p class="text-secondary" data-i18n="feat_6_desc">Automate your <strong>remote work
+                                hours</strong>. Set WASP to match
                             your actual job schedule, ensuring consistent <strong>activity tracking</strong> patterns.
                         </p>
                     </div>
@@ -266,19 +284,21 @@
     <section id="sarcasm" class="py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="section-title">The "Unshakeable" Work Ethic</h2>
-                <p class="text-secondary lead">Outsmarting corporate surveillance, one simulated wiggle at a time.</p>
+                <h2 class="section-title" data-i18n="sarcasm_title">The "Unshakeable" Work Ethic</h2>
+                <p class="text-secondary lead" data-i18n="sarcasm_desc">Outsmarting corporate surveillance, one
+                    simulated wiggle at a time.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="console-output h-100 p-4">
                         <div class="d-flex justify-content-between align-items-center mb-4">
-                            <span class="terminal-text small">> manager_live_feed.exe</span>
-                            <span class="badge rounded-pill bg-success opacity-75">ACTIVE</span>
+                            <span class="terminal-text small" data-i18n="mon_1_title">> manager_live_feed.exe</span>
+                            <span class="badge rounded-pill bg-success opacity-75"
+                                data-i18n="mon_1_status">ACTIVE</span>
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span class="small text-secondary">Status Reliability</span>
+                                <span class="small text-secondary" data-i18n="mon_1_metric1">Status Reliability</span>
                                 <span class="terminal-text">100%</span>
                             </div>
                             <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
@@ -287,8 +307,8 @@
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span class="small text-secondary">Simulated Focus</span>
-                                <span class="terminal-text">GOD-TIER</span>
+                                <span class="small text-secondary" data-i18n="mon_1_metric2">Simulated Focus</span>
+                                <span class="terminal-text" data-i18n="mon_1_god">GOD-TIER</span>
                             </div>
                             <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
                                 <div class="progress-bar" style="width: 100%; background: var(--terminal-green);"></div>
@@ -296,30 +316,32 @@
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span class="small text-secondary">Engagement Metrics</span>
-                                <span class="terminal-text">MAXIMAL</span>
+                                <span class="small text-secondary" data-i18n="mon_1_metric3">Engagement Metrics</span>
+                                <span class="terminal-text" data-i18n="mon_1_max">MAXIMAL</span>
                             </div>
                             <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
                                 <div class="progress-bar" style="width: 100%; background: var(--terminal-green);"></div>
                             </div>
                         </div>
                         <div class="terminal-text small mt-4 opacity-50">
-                            <div>> log: promotion_risk_detected</div>
-                            <div>> log: manager_ego_boost_engaged</div>
-                            <div>> Status: Manager is currently telling their spouse what a "rockstar" you are.</div>
+                            <div data-i18n="mon_1_log1">> log: promotion_risk_detected</div>
+                            <div data-i18n="mon_1_log2">> log: manager_ego_boost_engaged</div>
+                            <div data-i18n="mon_1_log3">> Status: Manager is currently telling their spouse what a
+                                "rockstar" you are.</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="console-output h-100 p-4" style="border-left-color: var(--danger-red);">
                         <div class="d-flex justify-content-between align-items-center mb-4">
-                            <span class="text-danger small">> human_survival_metrics.exe</span>
-                            <span class="badge rounded-pill bg-danger opacity-75">REALITY</span>
+                            <span class="text-danger small" data-i18n="mon_2_title">> human_survival_metrics.exe</span>
+                            <span class="badge rounded-pill bg-danger opacity-75"
+                                data-i18n="mon_2_status">REALITY</span>
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span class="small text-secondary">Sanity Level</span>
-                                <span class="text-danger">RECLAIMED</span>
+                                <span class="small text-secondary" data-i18n="mon_2_metric1">Sanity Level</span>
+                                <span class="text-danger" data-i18n="mon_2_reclaimed">RECLAIMED</span>
                             </div>
                             <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
                                 <div class="progress-bar" style="width: 100%; background: var(--danger-red);"></div>
@@ -327,7 +349,7 @@
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span class="small text-secondary">Leisure Optimization</span>
+                                <span class="small text-secondary" data-i18n="mon_2_metric2">Leisure Optimization</span>
                                 <span class="text-danger">400%</span>
                             </div>
                             <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
@@ -336,7 +358,7 @@
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between mb-2">
-                                <span class="small text-secondary">Existential Dread</span>
+                                <span class="small text-secondary" data-i18n="mon_2_metric3">Existential Dread</span>
                                 <span class="text-danger">0%</span>
                             </div>
                             <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
@@ -344,15 +366,17 @@
                             </div>
                         </div>
                         <div class="text-danger small mt-4 opacity-50">
-                            <div>> log: sanity_overflow_error</div>
-                            <div>> log: freedom_levels_exceeded_safety_limit</div>
-                            <div>> Status: Currently enjoying a coffee that isn't lukewarm corporate sludge.</div>
+                            <div data-i18n="mon_2_log1">> log: sanity_overflow_error</div>
+                            <div data-i18n="mon_2_log2">> log: freedom_levels_exceeded_safety_limit</div>
+                            <div data-i18n="mon_2_log3">> Status: Currently enjoying a coffee that isn't lukewarm
+                                corporate sludge.</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-5">
-                <p class="text-secondary small italic">"WASP is not just software; it's a philosophy of intentional
+                <p class="text-secondary small italic" data-i18n="sarcasm_footer">"WASP is not just software; it's a
+                    philosophy of intentional
                     inactivity."</p>
             </div>
         </div>
@@ -362,8 +386,9 @@
     <section id="faq" class="py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="section-title">The HR Interrogation Guide (FAQ)</h2>
-                <p class="text-secondary lead">Classified inquiries for the modern workplace rebel.</p>
+                <h2 class="section-title" data-i18n="faq_title">The HR Interrogation Guide (FAQ)</h2>
+                <p class="text-secondary lead" data-i18n="faq_desc">Classified inquiries for the modern workplace rebel.
+                </p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -372,12 +397,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq1">
+                                    data-bs-target="#faq1" data-i18n="faq_q1">
                                     > Is this legal?
                                 </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                                <div class="accordion-body" data-i18n="faq_a1">
                                     Using software to move your mouse? Yes. Check your employment contract for
                                     specifics.
                                 </div>
@@ -388,12 +413,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq2">
+                                    data-bs-target="#faq2" data-i18n="faq_q2">
                                     > Will I get fired?
                                 </button>
                             </h2>
                             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                                <div class="accordion-body" data-i18n="faq_a2">
                                     Not if you're smart about it. Still deliver your work, just take reasonable
                                     breaks.
                                 </div>
@@ -404,12 +429,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq3">
+                                    data-bs-target="#faq3" data-i18n="faq_q3">
                                     > Can tracking software detect this?
                                 </button>
                             </h2>
                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                                <div class="accordion-body" data-i18n="faq_a3">
                                     WASP simulates natural movement. But don't push your luck with 24/7 usage.
                                 </div>
                             </div>
@@ -419,12 +444,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq4">
+                                    data-bs-target="#faq4" data-i18n="faq_q4">
                                     > Isn't this unethical?
                                 </button>
                             </h2>
                             <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                                <div class="accordion-body" data-i18n="faq_a4">
                                     Is micromanaging employees unethical? We think treating workers like humans
                                     matters more.
                                 </div>
@@ -435,12 +460,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq5">
+                                    data-bs-target="#faq5" data-i18n="faq_q5">
                                     > What if I work from home?
                                 </button>
                             </h2>
                             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                                <div class="accordion-body" data-i18n="faq_a5">
                                     Perfect! Use it for lunch, household chores, or that quick nap you need.
                                 </div>
                             </div>
@@ -455,9 +480,9 @@
     <!-- Download Section -->
     <section id="download" class="py-5 bg-dark">
         <div class="container py-5 text-center">
-            <h2 class="section-title">Escaping the Matrix?</h2>
+            <h2 class="section-title" data-i18n="download_title">Escaping the Matrix?</h2>
             <div class="max-600 mx-auto mt-4">
-                <p class="mb-5">
+                <p class="mb-5" data-i18n="download_desc">
                     Download the standalone executable and reclaim your freedom.
                     No installation required. No traces left behind. Just pure, unadulterated "activity".
                 </p>
@@ -466,8 +491,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="p-4 border border-secondary rounded-3 h-100 d-flex flex-column text-center">
                             <i class="fab fa-windows platform-icon"></i>
-                            <h5 id="latest-version-text" class="mb-2">Windows</h5>
-                            <p class="text-secondary small mb-3" id="win-meta">Standalone Installer</p>
+                            <h5 id="latest-version-text" class="mb-2" data-i18n="dl_win">Windows</h5>
+                            <p class="text-secondary small mb-3" id="win-meta" data-i18n="dl_win_sub">Standalone
+                                Installer</p>
                             <div id="win-download-container" class="mt-auto d-flex flex-wrap gap-2">
                                 <!-- Buttons injected by script.js -->
                             </div>
@@ -477,8 +503,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="p-4 border border-secondary rounded-3 h-100 d-flex flex-column text-center">
                             <i class="fab fa-apple platform-icon"></i>
-                            <h5 id="mac-version-text" class="mb-2">macOS</h5>
-                            <p class="text-secondary small mb-3" id="mac-meta">Apple Disk Image</p>
+                            <h5 id="mac-version-text" class="mb-2" data-i18n="dl_mac">macOS</h5>
+                            <p class="text-secondary small mb-3" id="mac-meta" data-i18n="dl_mac_sub">Apple Disk Image
+                            </p>
                             <div id="mac-download-container" class="mt-auto d-flex flex-wrap gap-2">
                                 <!-- Buttons injected by script.js -->
                             </div>
@@ -488,8 +515,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="p-4 border border-secondary rounded-3 h-100 d-flex flex-column text-center">
                             <i class="fab fa-linux platform-icon"></i>
-                            <h5 id="linux-version-text" class="mb-2">Linux</h5>
-                            <p class="text-secondary small mb-3" id="linux-meta">Universal Binary</p>
+                            <h5 id="linux-version-text" class="mb-2" data-i18n="dl_lin">Linux</h5>
+                            <p class="text-secondary small mb-3" id="linux-meta" data-i18n="dl_lin_sub">Universal Binary
+                            </p>
                             <div id="linux-download-container" class="mt-auto d-flex flex-wrap gap-2">
                                 <!-- Buttons injected by script.js -->
                             </div>
@@ -499,15 +527,16 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="p-4 border border-secondary rounded-3 h-100 d-flex flex-column text-center">
                             <i class="fas fa-code platform-icon"></i>
-                            <h5 class="mb-2">Source</h5>
-                            <p class="text-secondary small mb-4">Clean & Open Code</p>
-                            <a href="#" id="download-zip" class="btn btn-outline-secondary w-100 mt-auto">
+                            <h5 class="mb-2" data-i18n="dl_src">Source</h5>
+                            <p class="text-secondary small mb-4" data-i18n="dl_src_sub">Clean & Open Code</p>
+                            <a href="#" id="download-zip" class="btn btn-outline-secondary w-100 mt-auto"
+                                data-i18n="dl_zip">
                                 Download .zip
                             </a>
                         </div>
                     </div>
                 </div>
-                <p class="mt-5 text-secondary x-small">
+                <p class="mt-5 text-secondary x-small" data-i18n="disclaimer">
                     * Disclaimer: WASP is not responsible for your job loss, HR interventions, or sudden promotions due
                     to "increased activity". Use with caution.
                 </p>
@@ -518,10 +547,10 @@
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
-            <p>&copy; 2025 WASP Project. Part of <a href="https://github.com/OpenInitia" target="_blank"
-                    class="text-secondary text-decoration-none"><strong>OpenInitia</strong></a></p>
-            <p class="small text-secondary">A project by <a href="https://github.com/Deadpool2000" target="_blank"
-                    class="text-secondary text-decoration-none"><strong>Deadpool2000</strong></a></p>
+            <p data-i18n="footer_copy">&copy; 2025 WASP Project. Part of <a href="https://github.com/OpenInitia"
+                    target="_blank" class="text-secondary text-decoration-none"><strong>OpenInitia</strong></a></p>
+            <p class="small text-secondary" data-i18n="footer_by">A project by <a href="https://github.com/Deadpool2000"
+                    target="_blank" class="text-secondary text-decoration-none"><strong>Deadpool2000</strong></a></p>
             <div class="social-links mt-3">
                 <a href="https://github.com/Deadpool2000/WASP" class="text-secondary mx-2" title="Source Code"><i
                         class="fab fa-github"></i></a>
@@ -530,7 +559,8 @@
                 <a href="https://github.com/Deadpool2000" class="text-secondary mx-2" title="Maintainer"><i
                         class="fas fa-user-ninja"></i></a>
             </div>
-            <p class="mt-4 small opacity-50">Built for the exhausted, the micromanaged, and the truly brave.</p>
+            <p class="mt-4 small opacity-50" data-i18n="footer_tag">Built for the exhausted, the micromanaged, and the
+                truly brave.</p>
         </div>
     </footer>
 
@@ -617,6 +647,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://tenor.com/res/v1/sdk.js"></script>
+    <script src="assets/js/translations.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
